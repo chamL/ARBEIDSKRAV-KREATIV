@@ -1,0 +1,370 @@
+/* GENERAL CODE STARTS HERE */
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    
+    background-color: rgb(244, 243, 241);
+    overflow-x: hidden;
+
+}
+p{
+    font-family: 'Special Elite', cursive;
+}
+h3{
+    font-family: 'Cinzel', serif;
+}
+a{
+    color: black;
+}
+/* GENERAL CODE ENDS HERE */
+
+/* here start button design*/
+
+.back_button {
+    background-color: rgba(0, 0, 0, 0.28);
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 8px;
+    left: 15px;
+    top: 15px;
+    z-index: 10;
+    position: fixed;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.699);
+    color: whitesmoke;
+}
+
+.back_button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.back_button:active {
+    opacity: 0.5;
+}
+
+
+/* here End button design*/
+
+
+
+/* HERO STARTS HERE  */
+.header_flag{
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    background-color: lightskyblue;
+    border-bottom: solid 7px black;
+}
+.line_flag{
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    color: rgb(248, 220, 37);
+    font-size: 70px;
+
+}
+.line_flag img{
+    width: 5rem;
+
+}
+/* HERO KODE ENDS HERE */
+
+/* here starts maradona kid container*/
+.maradonna_kid_container {
+    width: 300px;
+    font-size: 40px;
+    color: rgb(3, 3, 3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(0px); /* where the picture will end up*/
+    animation-name: move_me;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-delay: 2.5s;
+    
+    
+}
+@keyframes move_me {
+    0% {
+        transform: translateX(1px); /* where the picture starts*/
+    }
+    50% {
+        transform: translateX(960px);/* where the picture ends up*/
+    }
+    100% {
+        transform:translateX(1px);
+    }
+}
+.maradonna_kid {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 22rem;
+    height: 464px;
+    object-fit: cover;
+    transition: opacity 1.5s;
+    padding: 40px;
+
+    
+}
+.maradonna_kid:hover{
+    opacity: 0;
+
+}
+.maradona_legend {
+    width: 22rem;
+    max-width: 22rem;
+    height: 464px;
+    position: relative;
+    object-fit: cover;
+    padding: 40px;
+
+
+}
+
+/* here starts the dream tags*/
+.dream_container {
+    display:flex;
+    width: 100%;
+    padding: 2rem;
+}
+.dream_header {
+    font-size: 40px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.dream_text {
+    font-size: 18px;
+    padding: 2rem;
+    width: 90%;
+    text-align: center;
+    
+}
+.maradona_dream_container {
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+
+    
+}
+.maradona_dream {
+    width: 500px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 7px solid lightskyblue;
+    transition: 1s;
+   
+}
+
+.maradona_dream:hover {
+    box-shadow: 7px 7px 13px rgba(0, 0, 0, 0.5);
+    border: 7px solid rgb(27, 156, 237);
+    border-radius: 40px;
+   
+}
+
+/* SECTTION STARTS HERE */
+.section_two {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    border-top: 5PX black solid;
+    
+}
+
+
+
+.moments_header {
+    font-size: 40px;
+    padding: 2rem;
+    margin: auto;
+    text-align: center;
+}
+.moments_container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 3rem;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* VIDEO SECTION */
+
+.vid_container{
+    height: 20rem;
+    width: 20rem;
+    position: relative;
+    background-color: black;
+    border-radius: 1rem;
+    margin-right: 1rem;
+
+
+}
+.vid_container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid black;
+    border-radius: 1rem;
+    object-fit: cover;
+    animation: shake 500ms ease;
+
+
+}
+.vid_hover{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: 900;
+    color: yellow;
+    text-shadow: 2px 2px 4px black;
+
+
+
+}
+.vid_hover:hover{
+    animation: spin 900ms ease-in-out;
+
+}
+
+
+@keyframes spin {
+    0%{
+
+        transform: rotate(0deg);
+    
+    }
+
+    100%{
+     
+        transform: rotate(360deg);
+   
+    }
+}
+
+.vid_title{
+    position: absolute;
+    bottom: 5px;
+    color: yellow;
+    text-shadow: 3px 2px 3px black;
+    font-size: larger;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    padding: .5rem;
+
+}
+/* SECTION TWO ENDS HERE */
+
+/* SECTION THREE STARTS HERE */
+
+.section_three{
+    display: grid;
+    position: relative;
+    flex-direction: column;
+    border-top: 9px solid black;
+    width: 100%;
+    border-bottom: solid black 10px;
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+
+}
+.picture_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+
+
+}
+.background_p{
+    position:absolute;
+    font-size: 26px;
+    text-align: center;
+    color: rgba(119, 136, 153, 0.46);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: fit-content;
+    font-family: 'Permanent Marker', cursive;
+    padding:0rem 3rem;
+    z-index: 0;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.464);
+}
+.header_tag{
+    color: goldenrod;
+    text-align: center;
+    z-index: 2;
+    font-size: xx-large;
+    font-family: 'Cinzel', serif;
+}
+.pictures{
+    z-index: 2;
+    margin-top: 5rem;
+    display: block;
+    height: fit-content;
+    border-radius: 2rem;
+    max-width: 25rem;
+
+
+    
+
+}
+.pictures img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 9px black solid;
+    border-radius: 2rem;
+    max-height: 25rem;
+
+}
+
+.pictures img:hover{
+    animation: color 5s infinite;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+@keyframes color {
+    0%{
+
+       transform: rotate(5deg) 
+       
+    
+    }
+    10%{
+
+        transform: rotate(8deg);
+    
+    }
+    20%{
+
+        transform: rotate(-2deg);
+    
+    }
+    30%{
+
+        transform: rotate(-5deg);
+    
+    }
+   
+}

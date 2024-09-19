@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+       
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.maradona{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightskyblue;
+    height: 100vh;
+    width: 100%;
+
+}
+.background_p{
+    position:absolute;
+    font-size: 27px;
+    text-align: center;
+    color: rgba(119, 136, 153, 0.46);
+    top: 0px;
+    left: 0px;
+    height: fit-content;
+    font-family: 'Permanent Marker', cursive;
+    padding:0rem 3rem;
+    z-index: 0;
+}
+
+span{
+    color: darkred;
+    text-shadow: 2px 3px 4px black;
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 44px;
+}
+.muhammad{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gold;
+    height: 100%;
+    width: 100%;
+}
+.split{
+    height: 100%;
+    width: 2rem;
+    background-color: black;
+
+}
+.pic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 21rem;
+    background-color: transparent;
+    overflow: hidden;
+}
+.young_pic{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 21rem;
+    object-fit: cover;
+    border: solid 6px black;
+    filter: grayscale(100%);
+    transition: ease-in 1s;
+    z-index: 2;
+}
+.young_pic:hover{
+    opacity: 0;
+    
+}
+.prime_pic{
+
+    height: 100%;
+    width: 21rem;
+    object-fit: cover;
+    border: solid 6px black;
+    cursor: pointer;
+}
+  

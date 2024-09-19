@@ -1,0 +1,585 @@
+
+/* GENERAL CODE STARTS*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+    
+}
+body{
+
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    
+}
+
+h1{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin: 2rem 0rem;
+  font-family: 'Cinzel', serif;
+
+}
+p{
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Special Elite', cursive;
+
+
+
+}
+
+/* GENERAL CODE ENDS*/
+
+/* RECURRING CODE STARTS HERE */
+.banner{
+    width: 100vw;
+    max-height: 3rem;
+    background-color: black;
+    font-size: 2em;
+    text-align: center;
+    padding: .4rem;
+}
+.banner_two{
+    width: 100vw;
+    max-height: 3rem;
+    background-color: black;
+    border-top: solid 4px gold;
+    border-bottom: solid 4px gold;
+    font-size: 2em;
+    text-align: center;
+    padding: .4rem;
+
+}
+.banner p, .banner_two p{
+    letter-spacing: 6px;
+    width: 100%;
+    color: gold;
+    font-family: 'Bonheur Royale', cursive;
+    
+}
+.dream{
+    color: gold;
+    font-weight: bolder;
+}
+
+/* CODE FOR THE VIDEO CARD */
+.video_card{
+    position: relative;
+    padding: .5rem;
+    width: 24rem;
+    background-color: black;
+    margin: auto;
+
+}
+
+.video_card img{
+    width: 100%;
+    height: 12.9rem;
+    position: relative;
+}
+.vid_hover{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    font-size: larger;
+    color: red;
+    text-shadow: 3px 2px 4px black;
+    animation: vidPulse 4s ease-in-out infinite ;
+
+    
+}
+.vid_hover:hover{
+
+    cursor: pointer;
+
+}
+
+@keyframes vidPulse {
+    0%{
+        transform: scale(0.2);
+        opacity: 0.75;
+    }
+    100%{
+        transform: scale(1.75);
+        opacity: 0;
+    }
+ 
+    
+}
+
+
+
+/* CODE FOR VIDEO CARD ENDS HERE */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    padding: 2rem;
+   
+}
+.intro_text{
+    padding: 2rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* RECURRING CODE ENDS HERE */
+
+/* CODE FOR THE MAIN PAGE STARST HERE */
+.hero img{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    border-bottom: .5rem solid black;
+
+}
+.stick{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.stick a {
+    position: relative;
+}
+
+.stick img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.stick_btn{
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: solid 2px gold;
+    color: gold;  
+}
+.stick button:hover{
+    outline: solid 1px gold;
+    cursor: pointer;
+}
+
+.left_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    border-radius: 50%;
+    border: solid 2px gold;
+    color: gold;
+    font-size: 4rem;
+    text-decoration: none;
+
+
+ 
+}
+
+.stick_left_back:hover{
+    animation: pulse 1.4s infinite ease-in-out;
+ 
+}
+.stick_right_back:hover{
+    animation: pulse 1.5s infinite ease-in-out;
+ 
+}
+
+/* PULSE ANIMATION */
+@keyframes pulse {
+    0%{
+        transform: scale(0.95);
+        opacity: 0.75;
+    }
+    100%{
+        transform: scale(1.35);
+        opacity: 0;
+    }
+}
+
+
+.stick_left_back{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    background-color: black;
+    border-radius: 50%;
+    border: solid 2px gold;
+
+}
+.stick_right_back{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    background-color: black;
+    border-radius: 50%;
+    border: solid 2px gold;
+    background-color: rgba(0, 0, 0, 0.456);
+
+}
+
+
+
+.chapter_one{
+
+    background-color: rgba(0, 0, 0, 0.561);
+
+}
+.chapter_one_top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+
+}
+.chapter_one_bottom{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-top: 5rem;
+}
+.chapter_one_p{
+    padding: 2rem;
+    line-height: 40px;
+    color: aliceblue;
+    
+}
+.card_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 12rem;
+    padding: .5rem;
+    background-color: black;
+    margin: auto;
+
+}
+.card_one img{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* HER SATRTER CHAPTER TWO */
+
+
+.chapter_two_bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.chapter_two_left, .chapter_two_right{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px;
+
+    
+}
+.chapter_two_left p, .chapter_two_right p{
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.card_two{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: .5rem;
+    background-color: black;
+}
+
+.card_two p{
+    color: aliceblue;
+    padding: .5rem;
+    letter-spacing: 5px;
+    margin-top: 8px;
+    font-weight: 900;
+}
+.card_two img{
+    object-fit: cover;
+    width: 100%;
+
+}
+
+
+.intro_liston_top{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.liston_pic{
+    height: 100%;
+    border-radius: 100%;
+    border: solid 3px gold;
+    transition: ease-out;
+    transition-duration: 500ms;
+    transition-property: all;
+    filter: grayscale(80%);
+    outline: solid 1.5px goldenrod;
+}
+
+.liston_pic:hover{
+    border-radius: 0%;
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+
+/* HER SLUTER CHAPTER TWO */
+
+
+/* HER STARTER CHAPTER TRHEE */
+
+.chapter_three_left p, .chapter_three_right p{
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+
+.interlude{
+    display: flex;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.854);
+    color: white;
+    padding: 2rem;
+
+
+}
+
+
+/*CHAPTER THREE ENDS HER*/
+
+
+/* CHAPTER FOUR STARTS HERE */
+
+
+
+.chapter_four{
+padding: 0rem;
+
+
+}
+.chapter_four_top{
+    border-bottom: solid .4rem black;
+    background-color: darkred;
+    background-color: #7c0000;
+background-image: linear-gradient(147deg, #851e16 0%, #741411 74%);
+}
+
+.chapter_four_top p{
+    font-size: 22px;
+    margin: 2rem;
+
+
+
+}
+
+
+.chapter_four_bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    background-color:whitesmoke;
+    padding: 2rem;
+    height: 40rem;
+}
+
+
+
+
+/* CHAPTER FIVE STARTS HERE*/
+
+
+.slider_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 100vw;
+    background-color: rgba(14, 13, 13, 0.748);
+
+}
+
+.slider{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.262);
+    border: solid .5px black;
+    box-shadow: inset 4px 4px 15px 3px rgba(0, 0, 0, 0.531);
+    height: fit-content;
+    padding: 2rem;
+    width: 60rem;
+    border-radius: 18px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow-x: scroll;
+
+
+
+}
+.slider::-webkit-scrollbar{
+    background-color: rgba(14, 13, 13, 0.854);
+    border-radius: 18px;
+}
+.slider::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 5rem;
+}
+
+
+.slider_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20rem;
+    height: 15rem;
+    margin-right: 3rem;
+
+
+
+}
+.slider_card_top{
+    position: relative;
+    width: 19rem;
+    height: 10rem;
+    margin: auto;
+
+}
+.slider_card img{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 1px 2px 8px 4px black;
+    filter: grayscale(100%);
+ 
+   
+}
+.slider img:hover{
+    filter: grayscale(0%);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    box-shadow: 1px 2px 8px 6px black;
+
+
+}
+
+.slider_card h3{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(50%);
+    font-size: 32px;
+    text-shadow: 3px 2px 2px black;
+    font-family: 'Special Elite', cursive;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.slider_card p{
+    color: aliceblue;
+    margin: 1rem auto;
+    font-size: 16px;
+
+}
+
+.slider_tag{
+    font-family: 'Cinzel', serif;
+    border-radius: 2rem;
+    color: black;
+    padding: 1rem;
+    font-size: 25px;
+    margin-top: 1em;
+
+}
+
+
+/* FOOTER STARTS HERE */
+
+footer{
+    height: fit-content;
+    padding: 2em;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+}
+.footer{
+    width: 100%;
+    padding: 2rem;
+    
+}
+.footer-logo{
+    font-family: 'Cinzel', serif;
+    border: solid 2px rgba(0, 0, 0, 0.664);
+    color: black;
+    padding: .5em;
+    width: 20rem;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    box-shadow: inset 4px 4px 15px 3px rgba(0, 0, 0, 0.728);
+
+}
+
+.footer-copy{
+    width: 100%;
+    text-align: center;
+    color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.footer-copy hr{
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+/* FOOTER ENDS HERE  */
+
+
+@media screen and (max-width:1200px) {
+
+.chapter_two_bottom{
+    display: flex;
+    flex-direction: column;
+
+}
+};
+
